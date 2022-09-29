@@ -28,7 +28,6 @@ Widget setupTestWidget({
     child: Material(
       child: CalendarHeader(
         focusedMonth: focusedMonth,
-        calendarFormat: CalendarFormat.month,
         headerStyle: headerStyle,
         onLeftChevronTap: () => onLeftChevronTap?.call(),
         onRightChevronTap: () => onRightChevronTap?.call(),

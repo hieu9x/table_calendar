@@ -463,7 +463,6 @@ class _TableCalendarState<T> extends State<TableCalendar<T>> {
                     widget.onHeaderLongPressed?.call(value),
                 headerStyle: widget.headerStyle,
                 availableCalendarFormats: widget.availableCalendarFormats,
-                calendarFormat: widget.calendarFormat,
                 locale: widget.locale,
                 onFormatButtonTap: (format) {
                   assert(
@@ -519,7 +518,7 @@ class _TableCalendarState<T> extends State<TableCalendar<T>> {
                   padding: const EdgeInsets.symmetric(horizontal: 4),
                   child: Center(
                     child: Text(
-                      weekNumber.toString(),
+                      weekNumber.toString().toUpperCase(),
                       style: widget.calendarStyle.weekNumberTextStyle,
                     ),
                   ),
@@ -543,7 +542,7 @@ class _TableCalendarState<T> extends State<TableCalendar<T>> {
                 dowCell = Center(
                   child: ExcludeSemantics(
                     child: Text(
-                      weekdayString,
+                      weekdayString.toUpperCase(),
                       style: isWeekend
                           ? widget.daysOfWeekStyle.weekendStyle
                           : widget.daysOfWeekStyle.weekdayStyle,

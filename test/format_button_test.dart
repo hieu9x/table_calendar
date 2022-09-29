@@ -27,7 +27,6 @@ void main() {
           setupTestWidget(
             FormatButton(
               availableCalendarFormats: calendarFormatMap,
-              calendarFormat: CalendarFormat.month,
               decoration: headerStyle.formatButtonDecoration,
               padding: headerStyle.formatButtonPadding,
               textStyle: headerStyle.formatButtonTextStyle,
@@ -58,7 +57,6 @@ void main() {
           setupTestWidget(
             FormatButton(
               availableCalendarFormats: calendarFormatMap,
-              calendarFormat: CalendarFormat.twoWeeks,
               decoration: headerStyle.formatButtonDecoration,
               padding: headerStyle.formatButtonPadding,
               textStyle: headerStyle.formatButtonTextStyle,
@@ -89,7 +87,6 @@ void main() {
           setupTestWidget(
             FormatButton(
               availableCalendarFormats: calendarFormatMap,
-              calendarFormat: CalendarFormat.week,
               decoration: headerStyle.formatButtonDecoration,
               padding: headerStyle.formatButtonPadding,
               textStyle: headerStyle.formatButtonTextStyle,
@@ -131,7 +128,6 @@ void main() {
           setupTestWidget(
             FormatButton(
               availableCalendarFormats: calendarFormatMap,
-              calendarFormat: currentFormat,
               decoration: headerStyle.formatButtonDecoration,
               padding: headerStyle.formatButtonPadding,
               textStyle: headerStyle.formatButtonTextStyle,
@@ -164,7 +160,6 @@ void main() {
           setupTestWidget(
             FormatButton(
               availableCalendarFormats: calendarFormatMap,
-              calendarFormat: currentFormat,
               decoration: headerStyle.formatButtonDecoration,
               padding: headerStyle.formatButtonPadding,
               textStyle: headerStyle.formatButtonTextStyle,
